@@ -1,0 +1,193 @@
+public class LinkedListNode{
+	private double value;
+	private LinkedListNode Next ;
+	public LinkedListNode(double newValue) {
+		value = newValue;
+	}
+	public void setValue(double newValue) {
+		value = newValue;
+	}
+	public void setNext(LinkedListNode next) {
+		Next = next;
+	}
+	public double getValue() {
+		return value;
+	}
+	public LinkedListNode getNext() {
+		return Next;
+	}
+}
+
+public class LinkedListUtils {
+	public LinkedListNode head;
+	private int size;
+
+	public void insertNode(int value) {
+		LinkedListNode node = new LinkedListNode(value);
+		node.setNext(head);
+		head = node;
+		size++;
+	}
+
+	public int getSize() {
+		return size;
+	}
+
+	public void removeHead() {
+		head = head.getNext();
+		size--;
+	}
+
+	public void ListDisplay() {
+		for (LinkedListNode i = head; i != null; i = i.getNext()) {
+			System.out.println(i.getValue());
+		}
+	}
+
+	public double[] summary() {
+		double[] summaryArray = new double[5];
+		double sum = 0;
+		double temp;
+		double min = head.getValue();
+		double max = head.getValue();
+		for (LinkedListNode i = head; i != null; i = i.getNext()) {
+			sum += i.getValue();
+		}
+		summaryArray[0] = sum;
+		summaryArray[1] = sum / (double) size;
+		for (LinkedListNode i = head; i != null; i = i.getNext()) {
+			temp = i.getValue();
+			if (temp < min)
+				min = temp;
+		}
+		for (LinkedListNode i = head; i != null; i = i.getNext()) {
+			temp = i.getValue();
+			if (temp > max)
+				max = temp;
+		}
+		summaryArray[3] = max;
+		summaryArray[4] = min;
+		int ct, ct1;
+		if (size % 2 == 1) {
+			ct = (int) size / 2;
+			int j = 0;
+			for (LinkedListNode i = head; i != null; i = i.getNext()) {
+				if (j == ct)
+					summaryArray[2] = i.getValue();
+				j++;
+			}
+		} else {
+			ct = (int) size / 2 - 1;
+			ct1 = (int) size / 2;
+			int j = 0;
+			for (LinkedListNode i = head; i != null; i = i.getNext()) {
+				if (j == ct)
+					summaryArray[2] = (i.getValue() + i.getNext().getValue()) / 2.0;
+				j++;
+			}
+		}
+		return summaryArray;
+	}
+
+	public LinkedListNode reverse(LinkedListNode head) {
+		if (size <= 1)
+			return head;
+		LinkedListNode current = head.getNext();
+		LinkedListNode previous = head;
+		head.setNext(null);
+		while (current != null) {
+			previous = current;
+			current = current.getNext();
+			previous.setNext(head);
+			head = previous;
+		}
+		return head;
+	}
+
+	public static LinkedListNode evenIndexedElements(LinkedListNode head) {
+		for (LinkedListNode i = head; i != null; i = i.getNext()) {
+			if (i.getNext() == null)
+				return head;
+			i.setNext(i.getNext().getNext());
+		}
+		return head;
+	}
+
+	public static LinkedListNode insertionSort(LinkedListNode head) {
+		LinkedListNode current, previous = head, after = head.getNext();
+		current = previous.getNext();
+		while (current != null) {
+			previous = head;
+			after = head.getNext();
+			if (current.getValue() < head.getValue()) {
+				while (previous.getNext() != current)
+					previous = previous.getNext();
+				previous.setNext(current.getNext());
+				current.setNext(head);
+				head = current;
+				current = previous.getNext();
+				continue;
+			}
+
+			while (after != null) {
+				if (after == current) {
+					current = current.getNext();
+					break;
+				}
+				if (current.getValue() > after.getValue()) {
+					previous = previous.getNext();
+					after = after.getNext();
+					continue;
+				} else {
+					after.setNext(current.getNext());
+					current.setNext(after);
+					previous.setNext(current);
+					current = after.getNext();
+					break;
+				}
+			}
+		}
+		return head;
+	}
+
+	public LinkedListNode mergeSort(LinkedListNode head) {
+		
+		merge(left,right);
+		return head;
+	}
+	public void merge(LinkedListNode left,LinkedListNode right) {
+		
+	}
+
+	public LinkedListNode removeCentralNode(LinkedListNode head) {
+		int ct, i = 0;
+		if (size % 2 == 1)
+			ct = size / 2;
+		else
+			ct = size / 2 - 1;
+		LinkedListNode previous = head;
+		for (LinkedListNode current = head; current != null; current = current.getNext()) {
+			if (i == ct) {
+				previous.setNext(current.getNext());
+				break;
+			}
+			i++;
+			previous = current;
+		}
+		return head;
+	}
+
+	public boolean palindrome(LinkedListNode head) {
+		LinkedListNode i = null;
+		for (LinkedListNode j = head; j != null; j = j.getNext()) {
+			for (LinkedListNode k = head; k != null; k = k.getNext()) {
+				if (k.getNext() == i) {
+					if (j.getValue() != k.getValue())
+						return false;
+					i = k;
+				}
+			}
+		}
+		return true;
+	}
+}
