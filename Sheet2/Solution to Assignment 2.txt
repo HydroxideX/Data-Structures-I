@@ -22,7 +22,7 @@ public class LinkedListUtils {
 	public LinkedListNode head;
 	private int size;
 
-	public void insertNode(int value) {
+	public void insertNode(double value) {
 		LinkedListNode node = new LinkedListNode(value);
 		node.setNext(head);
 		head = node;
@@ -150,14 +150,54 @@ public class LinkedListUtils {
 		return head;
 	}
 
-	public LinkedListNode mergeSort(LinkedListNode head) {
-		
-		merge(left,right);
+	public LinkedListNode mergeSort(LinkedListNode head,int size) {
+		if(size<2) return head;
+		LinkedListNode left = head;
+		LinkedListNode right;
+		int j = 0;
+		while(j!=size/2) {
+			left = left.getNext();
+			j++;
+		}
+		right = left;
+		left = head;
+		left = mergeSort(left,j);
+		right = mergeSort(right,size-j);
+		LinkedListUtils tempList;
+		tempList = merge(left,right,j,size-j);
+		head = tempList.head;
 		return head;
 	}
-	public void merge(LinkedListNode left,LinkedListNode right) {
-		
+	public LinkedListUtils merge(LinkedListNode left,LinkedListNode right,int sizeLeft,int sizeRight) {
+		LinkedListUtils List = new LinkedListUtils();
+		LinkedListNode ctRight = right, ctLeft = left;
+		int i1 = 0, i2= 0;
+		while(i1<sizeLeft && i2<sizeRight) {
+			if(ctRight.getValue()<ctLeft.getValue()) {
+				List.insertNode(ctRight.getValue());
+				ctRight = ctRight.getNext();
+				i2++;
+			}
+			else {
+				List.insertNode(ctLeft.getValue());
+				ctLeft = ctLeft.getNext();
+				i1++;
+			}
+		}
+		while(i1<sizeLeft) {
+			List.insertNode(ctLeft.getValue());
+			ctLeft = ctLeft.getNext();
+			i1++;
+		}
+		while(i2<sizeRight) {
+			List.insertNode(ctRight.getValue());
+			ctRight = ctRight.getNext();
+			i2++;
+		}
+		List.head = List.reverse(List.head);
+		return List;
 	}
+
 
 	public LinkedListNode removeCentralNode(LinkedListNode head) {
 		int ct, i = 0;
