@@ -12,6 +12,10 @@ class Main implements IPlayersFinder {
             Point[]z = new Point[0];
             return z;
         }
+        if(photo[0] == null){
+            Point[]z = new Point[0];
+            return z;
+        }
         boolean[][] visited = new boolean[photo.length][photo[0].length()];
         int ct = 0;
         for(int i=0;i<photo.length;i++)
@@ -58,7 +62,7 @@ class Main implements IPlayersFinder {
         }
         return end;
     }
-    public java.awt.Point bfs(String[] photo,int team, int threshold,int i,int j,boolean[][] visited,int[] Area){
+    java.awt.Point bfs(String[] photo,int team, int threshold,int i,int j,boolean[][] visited,int[] Area){
         Point z = new Point(Area[1]+Area[3]+1,Area[2]+Area[4]+1);
         if(i == photo.length)
             return z;
