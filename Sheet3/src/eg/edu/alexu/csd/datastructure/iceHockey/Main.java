@@ -3,11 +3,6 @@ import javax.print.DocFlavor;
 import java.awt.Point;
 import java.util.*;
 class Main implements IPlayersFinder {
-    public static void main(String[] args) {
-
-    }
-
-
     public java.awt.Point[] findPlayers(String[] photo,int team,int threshold){
         Point[] x = new Point[20000];
         Point V = new Point();
