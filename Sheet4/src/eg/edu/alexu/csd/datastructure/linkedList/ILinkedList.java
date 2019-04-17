@@ -1,4 +1,5 @@
-package eg.edu.alexu.csd.datastructure.linkedList;
+package eg.edu.alexu.csd.datastructure.linkedList.cs76_cs35;
+
 
 public interface ILinkedList {
     /**
@@ -6,23 +7,23 @@ public interface ILinkedList {
      * @param index
      * @param element
      */
-    public void add(int index, Object element);
+    public void add(int index, int element);
     /**
      * Inserts the specified element at the end of the list.
      * @param element
      */
-    public void add(Object element);
+    public void addToEnd(int element);
     /**
      * @param index
      * @return the element at the specified position in this list.
      */
-    public Object get(int index);
-/*** Replaces the element at the specified position in this list with the
- * specified element.
- * @param index
- * @param element
- */
-public void set(int index, Object element);
+    public int get(int index);
+    /*** Replaces the element at the specified position in this list with the
+     * specified element.
+     * @param index
+     * @param element
+     */
+    public void set(int index, int element);
     /**
      * Removes all of the elements from this list.
      */
@@ -54,5 +55,5 @@ public void set(int index, Object element);
      *
     specified element.
      */
-    public boolean contains(Object o);
+    public boolean contains(int o);
 }
