@@ -1,0 +1,146 @@
+[33mcommit f18f0c74307d720347c881ad9b3a5c1db27be645[m[33m ([m[1;36mHEAD -> [m[1;32mYahia[m[33m, [m[1;31morigin/Yahia[m[33m)[m
+Author: HydroxideX <YahiaElsaadawy@gmail.com>
+Date:   Thu Apr 18 02:46:30 2019 +0200
+
+    1.1
+
+[33mcommit 1e86755891197563be3b39477a0ef4e2b8f540e0[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: HydroxideX <YahiaElsaadawy@gmail.com>
+Date:   Thu Apr 18 02:43:40 2019 +0200
+
+    Im awesome
+
+[33mcommit 5271ec8f744e1ea4cbc6cecc0cfdef11f3c64e1d[m
+Author: HydroxideX <YahiaElsaadawy@gmail.com>
+Date:   Thu Apr 18 02:25:26 2019 +0200
+
+    Doubly Linked Lists Finished
+
+[33mcommit 21ee63e72bf16a7b05632f332ca17e97b66f0643[m
+Merge: ebf7f36 b54469d
+Author: Shehab Elkhaligy <41087771+Sirito97@users.noreply.github.com>
+Date:   Wed Apr 17 22:22:48 2019 +0200
+
+    Merge pull request #3 from Sirito97/master
+    
+    Update 1
+
+[33mcommit b54469d9647984ad8ed7bd5fb3369eee6739021f[m
+Author: Shehab Elkhaligy <41087771+Sirito97@users.noreply.github.com>
+Date:   Wed Apr 17 22:21:29 2019 +0200
+
+    Update 1
+
+[33mcommit 16703a40fa78ff8a69ef67fb61bec33485a273cf[m
+Author: Shehab Elkhaligy <41087771+Sirito97@users.noreply.github.com>
+Date:   Wed Apr 17 22:19:58 2019 +0200
+
+    Update SinglyLinkedList.java
+
+[33mcommit 075a42ce095339b53f1deae512173b149ad73c7a[m
+Merge: 34fca0a 79f6bd0
+Author: Shehab Elkhaligy <41087771+Sirito97@users.noreply.github.com>
+Date:   Tue Apr 16 23:59:31 2019 +0200
+
+    Merge pull request #1 from HydroxideX/Yahia
+    
+    Yahia
+
+[33mcommit 79f6bd01e264ef8779120b16a1af75ea39813d7d[m
+Merge: a4184c4 ebf7f36
+Author: Shehab Elkhaligy <41087771+Sirito97@users.noreply.github.com>
+Date:   Tue Apr 16 23:58:15 2019 +0200
+
+    Merge pull request #2 from HydroxideX/master
+    
+    Merge pull request #1 from HydroxideX/Yahia
+
+[33mcommit ebf7f36bf9025fab3bcd58d8c1a22f00624c4772[m
+Merge: 34fca0a a4184c4
+Author: Yahia Mohamed Abdelaziz <YahiaElsaadawy@gmail.com>
+Date:   Tue Apr 16 02:24:54 2019 +0200
+
+    Merge pull request #1 from HydroxideX/Yahia
+    
+    a
+
+[33mcommit a4184c41f96c08264f3d2fbe12bd7bf1483dd51a[m
+Merge: e6eada7 fe42220
+Author: Yahia <YahiaElsaadawy@gmail.com>
+Date:   Tue Apr 16 02:23:58 2019 +0200
+
+    Merge remote-tracking branch 'origin/Yahia' into Yahia
+
+[33mcommit e6eada797996b47dd5c32634702b507f37cd8a5a[m
+Author: Yahia <YahiaElsaadawy@gmail.com>
+Date:   Tue Apr 16 02:22:31 2019 +0200
+
+    Auto stash before revert of "Layout"
+    
+    Yahia Commit
+
+[33mcommit fe4222055e824eb31fb51289bc228110feb8b271[m
+Author: Yahia <YahiaElsaadawy@gmail.com>
+Date:   Tue Apr 16 02:22:31 2019 +0200
+
+    Auto stash before revert of "Layout"
+
+[33mcommit 34fca0add6cbb15dedb531c0555faeb36176d9bc[m
+Author: Yahia <YahiaElsaadawy@gmail.com>
+Date:   Tue Apr 16 01:26:55 2019 +0200
+
+    Layout
+
+[33mcommit ae51c6d447d54693158a7eb65ea11d317d7a724c[m
+Author: Yahia <YahiaElsaadawy@gmail.com>
+Date:   Mon Apr 15 20:44:06 2019 +0200
+
+    final 1.1
+
+[33mcommit a0128b7e068c7ef96b033a65dd23db125d7382b1[m
+Author: Yahia <YahiaElsaadawy@gmail.com>
+Date:   Mon Apr 15 19:39:49 2019 +0200
+
+    Final
+
+[33mcommit 96ece5b8588b08de9130cb5236d0abd5a763bfde[m
+Author: Yahia <YahiaElsaadawy@gmail.com>
+Date:   Mon Apr 15 19:30:47 2019 +0200
+
+    Sheet3 End
+
+[33mcommit 6a6100cc7c6d1652b24d252e77b722aaa96e6bd1[m
+Author: Yahia <YahiaElsaadawy@gmail.com>
+Date:   Sat Apr 13 20:20:20 2019 +0200
+
+    Sheet3
+
+[33mcommit 2f23ca919f969a314254fd024591c7ab5ac16392[m
+Author: HydroxideX <YahiaElsaadawy@gmail.com>
+Date:   Sun Apr 7 21:29:02 2019 -0700
+
+    Update Solution to Assignment 2.txt
+
+[33mcommit 4cd5d58138e934841f81eaf55bbc76f357fb2c9a[m
+Author: HydroxideX <YahiaElsaadawy@gmail.com>
+Date:   Sun Apr 7 03:34:58 2019 -0700
+
+    Update Solution to Assignment 2.txt
+
+[33mcommit e81382c70d65673694ff88427a35494b67ec72c0[m
+Author: HydroxideX <YahiaElsaadawy@gmail.com>
+Date:   Sun Apr 7 03:34:18 2019 -0700
+
+    Sheet2
+
+[33mcommit 5cbbeae5ec070c3333e99699f340f8bf0eeae202[m
+Author: HydroxideX <YahiaElsaadawy@gmail.com>
+Date:   Thu Mar 7 16:41:39 2019 -0800
+
+    sheet1
+
+[33mcommit 8cd9dfe259bc82fb9c257f83eca1afd2c1877c90[m
+Author: HydroxideX <YahiaElsaadawy@gmail.com>
+Date:   Thu Mar 7 16:34:31 2019 -0800
+
+    Initial commit

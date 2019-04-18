@@ -2,23 +2,24 @@ package eg.edu.alexu.csd.datastructure.linkedList.cs76_cs35;
 
 import java.awt.Point;
 import java.util.*;
-public class DoublyLinkedList implements ILinkedList {
-  private class Node {
-    Object data;
-    private Node next;
-    private Node previous;
 
-    private Node(Object newdata) {
+public class DoublyLinkedList implements ILinkedList {
+  public class Node {
+    public Object data;
+    public Node next;
+    public Node previous;
+
+    public Node(Object newdata) {
       data = newdata;
     }
   }
 
-  private Node head;
-  private Node tail;
+  public Node head;
+  public Node tail;
   private int size = 0;
 
   public void add(int index, Object element) {
-    if (index > size+1 || index<0) {
+    if (index > size + 1 || index<0) {
       return;
     }
 
@@ -35,8 +36,10 @@ public class DoublyLinkedList implements ILinkedList {
       size++;
       return;
     }
-    if (index == size+1){
-      if(size == 0) return;
+    if (index == size+1) {
+      if (size == 0) {
+        return;
+      }
       tail.next = temp;
       temp.previous = tail;
       tail = temp;
@@ -56,17 +59,6 @@ public class DoublyLinkedList implements ILinkedList {
     size++;
   }
 
-  private Node getIndex(int index) {
-    if (index >= size || index<0) {
-      return null;
-    }
-    Node current = head;
-    for (int j = 1; j < index; j++) {
-      current = current.next;
-    }
-    return current;
-  }
-
   public void add(Object element) {
     if (size == 0) {
       head = new Node(element);
@@ -82,6 +74,19 @@ public class DoublyLinkedList implements ILinkedList {
     }
     size++;
   }
+
+  private Node getIndex(int index) {
+    if (index >= size || index<0) {
+      return null;
+    }
+    Node current = head;
+    for (int j = 1; j < index; j++) {
+      current = current.next;
+    }
+    return current;
+  }
+
+
 
   public Object get(int index) {
     if (index >= size  || index<0) {
@@ -123,10 +128,10 @@ public class DoublyLinkedList implements ILinkedList {
   }
 
   public void remove(int index) {
-    if (index >= size  || index<0) {
+    if (index >= size  || index < 0) {
       return;
     }
-    if(index == size-1){
+    if (index == size - 1) {
       tail = tail.previous;
     }
     if (index == 0) {

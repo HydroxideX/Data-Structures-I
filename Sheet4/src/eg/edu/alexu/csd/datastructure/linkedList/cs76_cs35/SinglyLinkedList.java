@@ -1,7 +1,7 @@
 package eg.edu.alexu.csd.datastructure.linkedList.cs76_cs35;
 
-public class SinglyLinkedList implements ILinkedList {
-  MyListNode head;
+public class SinglyLinkedList /*implements ILinkedList*/ {
+ /* MyListNode head;
 
   public class MyListNode{
     private int data;
@@ -193,5 +193,5 @@ public class SinglyLinkedList implements ILinkedList {
     System.out.println("Element Was Not Found !");
     return false;
   }
-
+*/
 }
