@@ -1,4 +1,4 @@
-package eg.edu.alexu.csd.datastructure.linkedList;
+package eg.edu.alexu.csd.datastructure.linkedList.cs76_cs35;
 import java.util.*;
 import java.awt.Point;
 public interface IPolynomialSolver {
@@ -38,7 +38,7 @@ name of the polynomial
  * */
 
 
-    float evaluatePolynomial(char poly, float value);
+   float evaluatePolynomial(char poly, float value);
  /**
   * * Add two polynomials
   * * @param poly1
@@ -51,7 +51,7 @@ name of the polynomial
   * */
 
 
-    int[][] add(char poly1, char poly2);
+   int[][] add(char poly1, char poly2);
  /**
   * * Subtract two polynomials
   * * @param poly1
