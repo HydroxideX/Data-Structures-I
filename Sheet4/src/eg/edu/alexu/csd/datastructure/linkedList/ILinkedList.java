@@ -7,23 +7,23 @@ public interface ILinkedList {
      * @param index
      * @param element
      */
-    public void add(int index, int element);
+    public void add(int index, Object element);
     /**
      * Inserts the specified element at the end of the list.
      * @param element
      */
-    public void addToEnd(int element);
+    public void addToEnd(Object element);
     /**
      * @param index
      * @return the element at the specified position in this list.
      */
-    public int get(int index);
+    public Object get(int index);
     /*** Replaces the element at the specified position in this list with the
      * specified element.
      * @param index
      * @param element
      */
-    public void set(int index, int element);
+    public void set(int index, Object element);
     /**
      * Removes all of the elements from this list.
      */
@@ -55,5 +55,5 @@ public interface ILinkedList {
      *
     specified element.
      */
-    public boolean contains(int o);
+    public boolean contains(Object o);
 }
