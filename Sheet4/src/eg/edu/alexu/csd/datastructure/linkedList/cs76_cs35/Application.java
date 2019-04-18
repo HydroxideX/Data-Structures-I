@@ -11,6 +11,8 @@ public class Application extends DoublyLinkedList implements IPolynomialSolver {
   private DoublyLinkedList R = new DoublyLinkedList();
 
   public void setPolynomial(char poly, int[][] terms) {
+    if(terms.length == 0 || terms[0] == null)
+      return;
     if (poly == 'A') {
       A.clear();
       addToList(A,terms);
@@ -123,6 +125,9 @@ public class Application extends DoublyLinkedList implements IPolynomialSolver {
       double x = temp.x;
       double y = temp.y;
       result += x * java.lang.Math.pow(value,y);
+    }
+    if (head == null || list.size()==0) {
+      System.out.print("Variable is not set return error: ");
     }
     return (float)result;
   }
