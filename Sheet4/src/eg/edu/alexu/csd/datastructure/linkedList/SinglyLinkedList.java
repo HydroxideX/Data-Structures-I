@@ -4,10 +4,10 @@ public class SinglyLinkedList implements ILinkedList {
     MyListNode head;
 
     public class MyListNode{
-        private int data;
+        Object data;
         private MyListNode next;
 
-        public MyListNode(int data) {
+        public MyListNode(Object data) {
             this.data = data;
             this.next = null;
         }
@@ -34,7 +34,7 @@ public class SinglyLinkedList implements ILinkedList {
     }
 
     //Inserts a specified element at the specified position in the list
-    public void add(int index, int element) {
+    public void add(int index, Object element) {
         if(index > getLength(head)-1) {
             System.out.println("Error : Index Exceeding Limits");
             return;
@@ -58,7 +58,7 @@ public class SinglyLinkedList implements ILinkedList {
 
     // Insert at the end
     // Changed name from add to addToEnd
-    public void addToEnd(int element){
+    public void addToEnd(Object element){
         MyListNode newNode =  new MyListNode(element);
         if(head == null) {
             head=newNode;
@@ -73,7 +73,11 @@ public class SinglyLinkedList implements ILinkedList {
     }
 
     // Return the element at the specified position in this list
-    public int get(int index){
+    public Object get(int index){
+        if(index>getLength(head)-1) {
+            System.out.println("Error");
+            return head;
+        }
         MyListNode current = head;
         if(index==0) {
             current = head;
@@ -90,7 +94,7 @@ public class SinglyLinkedList implements ILinkedList {
     }
 
     //Replaces the element at the specified position in this list with the specified element.
-    public void set(int index, int element) {
+    public void set(int index, Object element) {
         if(index > getLength(head)-1) {
             System.out.println("Error : Index Exceeding Limits");
             return;
@@ -178,7 +182,7 @@ public class SinglyLinkedList implements ILinkedList {
 
     // Searches if the element exists or not if yes return true if no return false
     // It only catches the first represent of the element o
-    public boolean contains(int o) {
+    public boolean contains(Object o) {
         MyListNode current=head;
         int position=0;
         while(current!=null) {
