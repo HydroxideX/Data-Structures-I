@@ -2,7 +2,7 @@ package eg.edu.alexu.csd.datastructure.linkedList.cs76_cs35;
 
 import java.awt.Point;
 import java.util.*;
-
+//azxsadpkzcx
 public class DoublyLinkedList implements ILinkedList {
   private class Node {
     Object data;
