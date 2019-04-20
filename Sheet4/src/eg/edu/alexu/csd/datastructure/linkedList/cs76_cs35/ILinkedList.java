@@ -12,7 +12,9 @@ public interface ILinkedList {
      * Inserts the specified element at the end of the list.
      * @param element
      */
+
     public void add(Object element);
+
     /**
      * @param index
      * @return the element at the specified position in this list.

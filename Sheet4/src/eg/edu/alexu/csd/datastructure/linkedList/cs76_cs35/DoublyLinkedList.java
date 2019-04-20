@@ -1,3 +1,4 @@
+
 package eg.edu.alexu.csd.datastructure.linkedList.cs76_cs35;
 
 import java.awt.Point;
@@ -181,4 +182,5 @@ public class DoublyLinkedList implements ILinkedList {
       current = current.next;
     }
   }
+
 }
