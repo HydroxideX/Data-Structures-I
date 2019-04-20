@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact name="Sheet4:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Sheet4_jar</output-path>
+    <root id="root">
+      <element id="archive" name="Sheet4.jar">
+        <element id="module-output" name="Sheet4" />
+      </element>
+    </root>
+  </artifact>
+</component>

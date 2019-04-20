@@ -60,7 +60,7 @@ public class SinglyLinkedList implements ILinkedList {
 
     // Insert at the end
     // Changed name from add to addToEnd
-    public void addToEnd(Object element) {
+    public void add(Object element) {
         MyListNode newNode = new MyListNode(element);
         if (head == null) {
             head = newNode;
@@ -207,7 +207,7 @@ public class SinglyLinkedList implements ILinkedList {
         MyListNode current = getIndex(from);
         int j = from;
         while (current != null && j <= to) {
-            newList.addToEnd(current.data);
+            newList.add(current.data);
             current = current.next;
             j++;
         }
