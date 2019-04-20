@@ -1,5 +1,6 @@
 package eg.edu.alexu.csd.datastructure.linkedList.cs76_cs35;
 
+
 public class SinglyLinkedList implements ILinkedList {
     MyListNode head;
 
@@ -222,4 +223,5 @@ public class SinglyLinkedList implements ILinkedList {
         }
         return current;
     }
+
 }

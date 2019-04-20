@@ -1,9 +1,11 @@
 package eg.edu.alexu.csd.datastructure.linkedList.cs76_cs35;
+
 import java.awt.Point;
 import java.util.*;
 import java.util.zip.DeflaterOutputStream;
 
 public class Application extends DoublyLinkedList implements IPolynomialSolver {
+
     private DoublyLinkedList A = new DoublyLinkedList();
     private DoublyLinkedList B = new DoublyLinkedList();
     private DoublyLinkedList C = new DoublyLinkedList();
@@ -258,4 +260,3 @@ public class Application extends DoublyLinkedList implements IPolynomialSolver {
             }
         }
     }
-}

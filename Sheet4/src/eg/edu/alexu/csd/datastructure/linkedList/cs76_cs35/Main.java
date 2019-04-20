@@ -1,5 +1,6 @@
 package eg.edu.alexu.csd.datastructure.linkedList.cs76_cs35;
 
+
 import com.sun.org.apache.xpath.internal.SourceTree;
 
 import javax.xml.soap.Node;
@@ -144,6 +145,9 @@ public class Main {
         String a = newList.print(poly);
         System.out.print(a);
     }
+
+}
+
 
 }
 
