@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Sheet5:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Sheet5_jar</output-path>
+    <root id="archive" name="Sheet5.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/Materials/InfixPostfix/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="Sheet5" />
+    </root>
+  </artifact>
+</component>
