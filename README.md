@@ -1,5 +1,5 @@
 # Data Structures I:
-##The Programs Are All Written In Java
+###The Programs Are All Written In Java
 ### Array Utilities:
 Contains The Following Operations:
 -Transpose A 2-D Array.
@@ -26,7 +26,7 @@ Contains Implementation Of Both Singly And Doubly Linked Lists And A Polynomials
 ###Queue Implementation.
 Full Implementation Of Queue Using an Array and a Linked List.
 ###Stack Implementation And Infix To PostFix Evaluator:
--Stack Implementation Using Both Array And Linked List.
+Stack Implementation Using Both Array And Linked List.
 -Infix To Postfix Evaluator Which Supports The Following Operations:
 -Parenthesized Expressions.
 -Power.
