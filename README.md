@@ -2,10 +2,10 @@
 ## The Programs Are All Written In Java
 ### Array Utilities:
   Contains The Following Operations:
-    - Transpose A 2-D Array.
-    - Move Values To The End Of The Array.
-    - Get The Average Of The Array.
-    - reverse An Array.
+    - Transpose A 2-D Array
+    - Move Values To The End Of The Array
+    - Get The Average Of The Array
+    - reverse An Array
     - Get Sum Of Even And Odd Elements Of An Array
   It Also has A Program To Find The n-th Fibonnaci Number
 ### Linked List Utilities:
